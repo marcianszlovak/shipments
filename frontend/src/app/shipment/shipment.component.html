@@ -1,0 +1,13 @@
+<div class="container">
+  <mat-list>
+    <mat-list-item *ngFor="let shipment of shipments">
+      <p matLine>
+        {{ shipment.id }}
+        {{ shipment.trackingNumber }}
+        {{ shipment.status }}
+        {{ shipment.date }}
+      </p>
+    </mat-list-item>
+  </mat-list>
+  <button mat-button (click)="logOut()">Log out</button>
+</div>

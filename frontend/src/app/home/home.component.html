@@ -1,0 +1,8 @@
+<div class="container">
+  <a *ngIf="isLoggedIn" class="mat-h1" routerLink="shipments"
+    >You are logged in, go to shipments</a
+  >
+  <a *ngIf="!isLoggedIn" class="mat-h1" routerLink="login"
+    >Click here to log in</a
+  >
+</div>
